@@ -43,12 +43,12 @@
 
 #define VFS_RESULT_WRAPPER_OK 0
 
-enum fp_capture_result
-{
-    FP_CAPTURE_ERROR = -1,
-    FP_CAPTURE_COMPLETE = 1,
-    FP_CAPTURE_FAIL
-};
+#enum fp_capture_result
+#{
+#    FP_CAPTURE_ERROR = -1,
+#    FP_CAPTURE_COMPLETE = 1,
+#    FP_CAPTURE_FAIL
+#};
 
 typedef struct validity_dev_s 
 {
