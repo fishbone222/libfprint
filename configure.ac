@@ -47,6 +47,7 @@ enable_vfs101='no'
 enable_vfs301='no'
 enable_upektc_img='no'
 enable_etes603='no'
+#require_imagemagick='yes'
 
 AC_ARG_WITH([drivers],[AS_HELP_STRING([--with-drivers],
 	[List of drivers to enable])],
@@ -169,6 +170,7 @@ AM_CONDITIONAL([ENABLE_VFS101], [test "$enable_vfs101" = "yes"])
 AM_CONDITIONAL([ENABLE_VFS301], [test "$enable_vfs301" = "yes"])
 AM_CONDITIONAL([ENABLE_UPEKTC_IMG], [test "$enable_upektc_img" = "yes"])
 AM_CONDITIONAL([ENABLE_ETES603], [test "$enable_etes603" = "yes"])
+#AM_CONDITIONAL([REQUIRE_IMAGEMAGICK], [test "$require_imagemagick" = "yes"])
 
 
 PKG_CHECK_MODULES(LIBUSB, [libusb-1.0 >= 0.9.1])
