@@ -173,11 +173,11 @@ endif
 
 DRIVER_SRC += $(VCS_SRC)
 
-if REQUIRE_IMAGEMAGICK
-OTHER_SRC += imagemagick.c
-libfprint_la_CFLAGS += $(IMAGING_CFLAGS)
-libfprint_la_LIBADD += $(IMAGING_LIBS)
-endif
+#if REQUIRE_IMAGEMAGICK
+#OTHER_SRC += imagemagick.c
+#libfprint_la_CFLAGS += $(IMAGING_CFLAGS)
+#libfprint_la_LIBADD += $(IMAGING_LIBS)
+#endif
 
 if ENABLE_UPEKTC_IMG
 DRIVER_SRC += $(UPEKTC_IMG_SRC)
